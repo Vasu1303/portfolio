@@ -4,7 +4,7 @@ const Gradient = forwardRef<HTMLDivElement, React.HTMLProps<HTMLDivElement>>((pr
   return (
     <div
       ref={ref}
-      className={`w-[40rem] h-40 relative left-52 origin-center scale-x-0 ${props.className ?? ""}`}
+      className={`w-[40rem]  relative left-52 origin-center scale-x-0 ${props.className ?? ""}`}
       {...props}
     >
       <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
