@@ -7,10 +7,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Magnet from "@/components/Magnet/Magnet";
-
 import dynamic from "next/dynamic";
-import Cubes from "@/components/Cubes/Cubes";
 
 const Cover = dynamic(
   () => import("@/components/ui/cover").then((mod) => ({ default: mod.Cover })),
