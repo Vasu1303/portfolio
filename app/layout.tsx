@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Silkscreen, JetBrains_Mono } from "next/font/google";
+import { Poppins, Silkscreen, JetBrains_Mono, Honk } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -8,6 +8,13 @@ export const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   style: ["normal", "italic"],
+});
+export const honk = Honk({
+  weight: ["400"],
+  variable: "--font-honk",
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 export const jetbrains = JetBrains_Mono({
@@ -38,8 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${silkscreen.variable} ${jetbrains.variable}  antialiased bg-neutral-950 text-white pb-[100px]`}
-      >
+        className={`${poppins.variable} ${silkscreen.variable} ${jetbrains.variable} ${honk.variable}  antialiased bg-neutral-950 text-white mb-[10000px]`}>
         {children}
         <Toaster />
       </body>

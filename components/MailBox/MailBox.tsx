@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { CheckCheck, ChevronDown, ChevronRightIcon } from "lucide-react";
 
-import { AnimatedShinyText } from "./magicui/animated-shiny-text";
+import { AnimatedShinyText } from "@/components/ui/magic-ui/animated-shiny-text";
 
-import { AnimatedSubscribeButton } from "./magicui/animated-subscribe-button";
+import { AnimatedSubscribeButton } from "@/components/ui/magic-ui/animated-subscribe-button";
 import { toast } from "sonner";
 
 const MailBox = () => {

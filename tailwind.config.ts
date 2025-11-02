@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import { jetbrains, silkscreen } from "./app/layout";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
     darkMode: ["class"],
@@ -28,6 +28,10 @@ const config: Config = {
 		],
 		jetbrains:[
 			'var(--font-jetbrains)',
+			'sans-serif'
+		],
+		honk:[
+			'var(--font-honk)',
 			'sans-serif'
 		]
   	},
@@ -86,6 +90,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };
 export default config;

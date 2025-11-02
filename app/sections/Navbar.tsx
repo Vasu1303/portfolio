@@ -10,7 +10,7 @@ const navLinks = [
 ]
 const Navbar = () => {
   return (
-    <section className='py-4 fixed w-full top-0 z-50'>
+    <section className='py-4  fixed w-full top-0 z-50'>
         <div className='container max-w-5xl'>
             <div className='border border-white/15 rounded-full bg-neutral-950/70 backdrop-blur'>
                 <div className='grid grid-cols-3 p-4 items-center px-4 '>
